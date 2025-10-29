@@ -5,20 +5,28 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>My Portfolio</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-   <header>
-      <h1>Saurabh Mudgal</h1>
-   </header>
-   <nav>
-      <ul>
-         <li><a href="#about">About</a></li>
-         <li><a href="#projects">Projects</a></li>
-         <li><a href="#skills">Technical Skills</a></li>
-         <li><a href="#contact">Contact Me</a></li>
-      </ul>
-   </nav>
+   <section>
+      <header>
+         <h1 id="start">Saurabh Mudgal</h1>
+      </header>
+      <nav class="nav">
+         <ul class="list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Technical Skills</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+         </ul>
+      </nav>
+   </section>
    <main>
       <section>
          <h2>Welcome to my Portfolio!</h2>
@@ -37,7 +45,7 @@
       </section>
       <section id="projects">
          <h2>Current Projects</h2>
-         <ul>
+         <ul class="list" style="width:500px;">
             <li><b>Portfolio Website:</b> A personal one page website to showcase bio, technical skills and contact
                details.</li>
             <li><b>Expenses Tracker:</b> A program which adds expenses as records after every purchase, shows total
@@ -55,15 +63,23 @@
             </tr>
             <tr>
                <td>HTML</td>
-               <td>Beginner</td>
+               <td>Intermediate</td>
             </tr>
             <tr>
                <td>Python</td>
+               <td>Intermediate</td>
+            </tr>
+            <tr>
+               <td>MySQL</td>
                <td>Beginner</td>
             </tr>
             <tr>
                <td>CSS</td>
-               <td>Learning</td>
+               <td>Intermediate</td>
+            </tr>
+            <tr>
+               <td>JavaScript</td>
+               <td>Beginner</td>
             </tr>
          </table>
       </section>
@@ -77,7 +93,9 @@
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="4" cols="20" placeholder="Enter your message here"></textarea>
          </form>
+         <button type="submit">Submit!</button>
       </section>
+      <a href="#start" id="backtotop">Back to Top</a>
    </main>
    <footer>&copy; My First Website</footer>
 </body>
