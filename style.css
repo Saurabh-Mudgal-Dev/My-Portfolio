@@ -1,9 +1,5 @@
-html {
-    scroll-behavior: smooth;
-}
-
 body {
-    background-color: rgb(40, 23, 40);
+    background-color: rgb(40, 23, 40);   
     color: rgb(248, 248, 248);
     font-family: 'Orbitron', sans-serif;
 }
@@ -15,50 +11,38 @@ h1 {
     font-size: 50px;
 }
 
-.nav a {
+.nav a {                    /*all <a> tags inside nav class elements*/
     color: rgba(200, 200, 200, 1);
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 8px;
     font-size: 20px;
     font-weight: 300;
-}
-
-.nav a:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-    color: rgb(255, 255, 255);
+    color: aliceblue;
 }
 
 .list {
-    list-style: none;
+    list-style: none;         /*remove bullets from list*/
     margin: 0;
     padding: 0;
     width: 275px;
 }
 
 .list li {
-    background: linear-gradient(135deg, rgb(40, 23, 40), rgb(70, 35, 70));
+    background: rgb(73, 64, 82);
     margin: 12px 0;
     padding: 15px 20px;
     border-radius: 12px;
     font-size: 1.2rem;
     position: relative;
-    cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
-}
-
-.list li::before {
-    content: '♣';
-    margin-right: 10px;
-    color: rgb(200, 150, 250);
 }
 
 section {
     padding: 30px;
     margin: 20px auto;
     max-width: 800px;
-    border: 1px solid rgba(200, 200, 200, 1);
-    border-radius: 10px;
+    border: 1px solid rgba(200, 200, 200, 1);  
+    border-radius: 10px;                        /*rounded edges*/
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -78,19 +62,24 @@ table {
 td,
 th {
     text-align: center;
-    border: 1px solid rgba(200, 200, 200, 1);
+    border: 1px solid rgba(200, 200, 200, 1);      /*better looking elements in table*/
     padding: 10px;
 }
 
+th {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
 form {
-    display: flex;
-    flex-direction: column;
+    border: 1px solid white;
+    padding: 3%;
+    font-size: 40px;
 }
 
 label {
     color: rgb(245, 243, 246);
     font-weight: 500;
-    font-size: 14px;
+    font-size: 20px;
     letter-spacing: 0.5px;
 }
 
@@ -99,13 +88,14 @@ button {
     color: rgb(255, 255, 255)
 }
 
-button:hover {
-    box-shadow: 0 6px 20px rgba(233, 235, 242, 0.6);
+button {
+    box-shadow: 2px 2px 2px white;            /*white glow of box*/
 }
 
 img {
     border: 2px solid rgba(233, 235, 242, 0.6);
     box-shadow: 0 4px 8px rgba(192, 192, 192, 0.5);
+    border-radius: 45%;                        /*make the image a circle having radius as 45% of orginal dimensions*/   
 }
 
 #backtotop {
@@ -113,6 +103,8 @@ img {
     bottom: 30px;
     right: 30px;
     text-decoration: none;
-    color:inherit;
+    color: inherit;                         /*take color from button class*/
     border: 2px solid rgb(248, 248, 248);
+    height: 40px;
+    padding: 12px, 24px;
 }
