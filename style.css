@@ -1,101 +1,43 @@
-body {
-    background-color: rgb(40, 23, 40);   
-    color: rgb(248, 248, 248);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #2a6f97;
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
     font-family: 'Orbitron', sans-serif;
 }
 
-h1 {
-    text-align: center;
+header h1 {
     font-weight: 650;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    font-size: 50px;
-}
-
-.nav a {                    /*all <a> tags inside nav class elements*/
-    color: rgba(200, 200, 200, 1);
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-size: 20px;
-    font-weight: 300;
-    color: aliceblue;
-}
-
-.list {
-    list-style: none;         /*remove bullets from list*/
-    margin: 0;
-    padding: 0;
-    width: 275px;
-}
-
-.list li {
-    background: rgb(73, 64, 82);
-    margin: 12px 0;
-    padding: 15px 20px;
-    border-radius: 12px;
-    font-size: 1.2rem;
-    position: relative;
+    font-size: 35px;
+    margin-bottom: 15px;
 }
 
 section {
-    padding: 30px;
-    margin: 20px auto;
-    max-width: 800px;
-    border: 1px solid rgba(200, 200, 200, 1);  
-    border-radius: 10px;                        /*rounded edges*/
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
 
-h2 {
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    font-size: 35px;
-}
-
-table {
-    background-color: rgb(70, 35, 70);
-    border-color: rgb(255, 255, 255);
-    width: 500px;
-    height: 400px;
-}
-
-td,
-th {
-    text-align: center;
-    border: 1px solid rgba(200, 200, 200, 1);      /*better looking elements in table*/
-    padding: 10px;
-}
-
-th {
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
-form {
-    border: 1px solid white;
-    padding: 3%;
-    font-size: 40px;
-}
-
-label {
-    color: rgb(245, 243, 246);
-    font-weight: 500;
+.nav a {
+    text-decoration: none;
+    padding: 10px 20px;
     font-size: 20px;
-    letter-spacing: 0.5px;
-}
-
-button {
-    background-color: rgb(70, 35, 70);
-    color: rgb(255, 255, 255)
-}
-
-button {
-    box-shadow: 2px 2px 2px white;            /*white glow of box*/
+    font-weight: 300;
+    color: white;
 }
 
 img {
-    border: 2px solid rgba(233, 235, 242, 0.6);
-    box-shadow: 0 4px 8px rgba(192, 192, 192, 0.5);
-    border-radius: 45%;                        /*make the image a circle having radius as 45% of orginal dimensions*/   
+    border: 2px solid rgba(233, 235, 242, 0.1);
+    border-radius: 45%;
+    /*make the image a circle having radius as 45% of orginal dimensions*/
 }
 
 #backtotop {
@@ -103,8 +45,62 @@ img {
     bottom: 30px;
     right: 30px;
     text-decoration: none;
-    color: inherit;                         /*take color from button class*/
-    border: 2px solid rgb(248, 248, 248);
-    height: 40px;
-    padding: 12px, 24px;
+    color: white;
+    background-color: #2a6f97;
+    border: 2px solid black;
+    padding: 12px 24px;
+    border-radius: 8px;
+}
+
+div {
+    text-align: center;
+}
+
+ul {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-color: #2a6f97;
+    width: 600px;
+}
+
+th {
+    background-color: #2a6f97;
+    color: white;
+    padding: 12px;
+}
+
+th {
+    padding: 12px;
+}
+
+button {
+    background-color: #2a6f97;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: 2px solid black;
+    font-size: 16px;
+}
+
+form table {
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #2a6f97;
+    padding: 20px;
+}
+
+form td {
+    padding: 10px;
+}
+
+footer {
+    background-color: #2a6f97;
+    color: white;
+    height: 30px;
 }
